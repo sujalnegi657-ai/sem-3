@@ -8,6 +8,7 @@ function clearDisplay() {
     display.value = "";
 }
 
+
 function calculate() {
     if (!display.value.trim()) {
         alert("Please enter a calculation first.");
