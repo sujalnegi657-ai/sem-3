@@ -2,6 +2,7 @@ const http = require('http');
 
 const PORT = 3005;
 
+
 const server = http.createServer((req, res) => {
     console.log(`Request received: ${req.method} ${req.url}`);
 
