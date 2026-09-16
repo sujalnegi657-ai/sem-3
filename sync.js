@@ -4,6 +4,7 @@ fs.writeFileSync('example.txt', 'Hello, World!', 'utf8',);
 console.log('File written successfully.');
 
 
+
 const data=fs.readFileSync('example.txt', 'utf8');
 console.log('File content is given as:', data);
 
