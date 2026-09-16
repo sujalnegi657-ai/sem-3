@@ -1,6 +1,7 @@
 const fs = require("fs").promises;
 
 async function writeFile(){
+    
     try{
         await fs.writeFile('promises.txt','hello students! \nustaad baba');
         console.log('file created and data written successfully!');
