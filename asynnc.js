@@ -8,6 +8,7 @@ const data=fs.readFileSync('example.txt', 'utf8');
 console.log('File content is given as:', data);
 
 
+
 fs.appendFileSync('example.txt', '\nThis is an new added line in the file.', 'utf8');
 console.log('Data appended successfully.');
 
