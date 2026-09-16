@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+
+    <style>
+        body {
+            background-color: rgb(248, 183, 189);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        #form {
+            width: 400px;
+            padding: 30px;
+            background-color: rgb(138, 157, 163);
+            text-align: center;
+            font-size: 20px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+
+        #form h1 {
+            margin-bottom: 25px;
+        }
+
+        #form p {
+            margin: 15px 0 5px;
+        }
+
+        #form input {
+            width: 80%;
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="form">
+        <h1 id="h1">Keyboard Events</h1>
+
+        <p>onkeydown</p>
+        <input type="text" id="keydownInput">
+
+        <p>onkeyup</p>
+        <input type="text" id="keyupInput">
+
+        <p>onkeypress</p>
+        <input type="text" id="keypressInput">
+    </div>
+
+    <script>
+        const keydownInput = document.getElementById("keydownInput").style.background="orange";
+        const keyupInput = document.getElementById("keyupInput").style.background="white";
+        const keypressInput = document.getElementById("keypressInput").style.background="green";
+
+        keydownInput.onkeydown = function () {
+            console.log("Key Down");
+        };
+
+        keyupInput.onkeyup = function () {
+            console.log("Key Up");
+        };
+
+        keypressInput.onkeypress = function () {
+            console.log("Key Press");
+        };
+    </script>
+
+</body>
+</html>
