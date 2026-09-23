@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
 }
@@ -127,3 +128,263 @@ button:hover {
 #resultPage p {
     font-size: 18px;
 }
+=======
+ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    background-color: #f5f5f5;
+}
+
+main {
+    width: 800px;
+    margin: 30px auto;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+/* Details */
+
+.details-card {
+    padding: 30px;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.brand-icon {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.hero {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    color: blue;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.hero h1 span {
+    color: blue;
+}
+
+.hero p {
+    margin-top: 15px;
+    color: gray;
+}
+
+/* Form */
+
+form {
+    margin-top: 20px;
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-group {
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: blue;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+.arrow {
+    float: right;
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+}
+
+/* Quiz */
+
+.quiz-card {
+    display: none;
+    padding: 30px;
+}
+
+.quiz-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-pill {
+    background-color: lightblue;
+    padding: 8px;
+}
+
+.progress-area {
+    margin: 30px 0;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-track {
+    background-color: lightgray;
+    height: 5px;
+}
+
+.progress-bar {
+    background-color: blue;
+    height: 5px;
+    width: 20%;
+}
+
+.question-label {
+    color: gray;
+}
+
+.question-area h2 {
+    margin: 15px 0;
+}
+
+.option {
+    border: 1px solid gray;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.option.selected {
+    background-color: lightblue;
+    border: 2px solid blue;
+}
+
+.next-btn {
+    margin-top: 15px;
+}
+
+/* Result */
+
+.result-card {
+    display: none;
+    padding: 30px;
+    text-align: center;
+}
+
+.result-icon {
+    background-color: lightgreen;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    padding-top: 20px;
+    border-radius: 50%;
+}
+
+.result-card h1 {
+    margin: 15px;
+}
+
+.result-card h1 span {
+    color: rgb(101, 23, 73);
+}
+
+.result-subtitle {
+    color: rgb(156, 27, 27);
+    margin-bottom: 20px;
+}
+
+.result-score {
+    background-color: rgb(49, 195, 81);
+    padding: 20px;
+}
+
+.result-score strong {
+    font-size: 40px;
+}
+
+.percentage {
+    color: rgb(87, 107, 14);
+}
+
+.user-details {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.user-details div {
+    width: 50%;
+    background-color: #7f1f1f;
+    padding: 15px;
+}
+
+.user-details span {
+    display: block;
+    color: rgb(196, 125, 125);
+    font-size: 12px;
+}
+
+@media (max-width: 650px) {
+
+    main {
+        width: auto;
+        margin: 15px;
+    }
+
+    .input-row {
+        display: block;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+
+    .user-details {
+        display: block;
+    }
+
+    .user-details div {
+        width: auto;
+        margin-bottom: 10px;
+    }
+}
+>>>>>>> 5fc7c8b6f008b4bcf2ad49520d70f2aa66934e33

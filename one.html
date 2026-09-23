@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -88,3 +89,241 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quizify</title>
+
+    <link rel="stylesheet" href="one.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <main>
+
+        <!-- Student Details -->
+
+        <section class="card details-card" id="detailsPage">
+
+            <div class="brand">
+                <div class="brand-icon">Q</div>
+                <h3>Quizify</h3>
+            </div>
+
+            <div class="hero">
+                <p class="eyebrow">QUIZ EXPERIENCE</p>
+
+                
+
+                <p>
+                    Enter your details below and get ready for a quick challenge.
+                </p>
+            </div>
+
+            <form id="detailsForm">
+
+                <div class="input-row">
+
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Sujal"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+                    <label for="college">College / Institution</label>
+                    <input
+                        type="text"
+                        id="college"
+                        placeholder="Enter your college"
+                        required
+                    >
+                </div>
+
+                <div class="input-row">
+
+                    <div class="input-group">
+                        <label for="branch">Branch</label>
+                        <input
+                            type="text"
+                            id="branch"
+                            placeholder="CSE / DS"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label for="year">Year</label>
+
+                        <select id="year" required>
+                            <option value="">Select year</option>
+                            <option value="1st Year">1st Year</option>
+                            <option value="2nd Year">2nd Year</option>
+                            <option value="3rd Year">3rd Year</option>
+                            <option value="4th Year">4th Year</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="primary-btn">
+                    <span>Start Quiz</span>
+                    <span class="arrow">→</span>
+                </button>
+
+            </form>
+
+            <p class="footer-note">
+                <span>●</span>
+                Your information stays private
+            </p>
+
+        </section>
+
+
+        <!-- Quiz Section -->
+
+        <section class="card quiz-card" id="quizPage">
+
+            <div class="quiz-top">
+
+                <div class="brand">
+                    <div class="brand-icon">Q</div>
+                    <h3>QuizSphere</h3>
+                </div>
+
+                <div class="score-pill" id="score">
+                    Score: 0
+                </div>
+
+            </div>
+
+            <div class="progress-area">
+
+                <div class="progress-info">
+                    <span id="questionNumber">
+                        Question 1 of 5
+                    </span>
+
+                    <span id="progressPercent">
+                        20%
+                    </span>
+                </div>
+
+                <div class="progress-track">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+
+            </div>
+
+            <div class="question-area">
+
+                <p class="question-label">QUESTION</p>
+
+                <h2 id="question"></h2>
+
+                <div id="options"></div>
+
+            </div>
+
+            <button class="primary-btn next-btn" id="nextBtn">
+                <span>Next Question</span>
+                <span class="arrow">→</span>
+            </button>
+
+        </section>
+
+
+        <!-- Result Section -->
+
+        <section class="card result-card" id="resultPage">
+
+            <div class="result-icon">✓</div>
+
+            <p class="eyebrow">QUIZ COMPLETED</p>
+
+            <h1>
+                Great job,
+                <span id="resultName"></span>!
+            </h1>
+
+            <p class="result-subtitle">
+                Here's a summary of your quiz performance.
+            </p>
+
+            <div class="result-score">
+
+                <span>Your Score</span>
+
+                <strong id="finalScore">0 / 5</strong>
+
+                <p class="percentage" id="percentage">
+                    0%
+                </p>
+
+            </div>
+
+            <div class="user-details">
+
+                <div>
+                    <span>EMAIL</span>
+                    <strong id="resultEmail"></strong>
+                </div>
+
+                <div>
+                    <span>COLLEGE</span>
+                    <strong id="resultCollege"></strong>
+                </div>
+
+                <div>
+                    <span>BRANCH</span>
+                    <strong id="resultBranch"></strong>
+                </div>
+
+                <div>
+                    <span>YEAR</span>
+                    <strong id="resultYear"></strong>
+                </div>
+
+            </div>
+
+            <button
+                class="primary-btn"
+                onclick="location.reload()"
+            >
+                <span>Take Quiz Again</span>
+                <span class="arrow">↻</span>
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="one.js"></script>
+
+</body>
+</html>
+>>>>>>> 5fc7c8b6f008b4bcf2ad49520d70f2aa66934e33
