@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff1f3;
+    color: #333;
+}
+
+.page {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #e5a3ad;
+    border-radius: 8px;
+}
+
+#quizPage,
+#resultPage {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color: #b8324b;
+}
+
+h2 {
+    color: #8f263b;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d99aa5;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5a3ad;
+    color: #8f263b;
+    font-weight: bold;
+}
+
+.question-time {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff0f2;
+    color: #b8324b;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#question {
+    margin-top: 30px;
+    color: #333;
+}
+
+.keyboard-info {
+    color: #8f263b;
+    font-size: 14px;
+    text-align: center;
+}
+
+.option {
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #d99aa5;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.option:hover {
+    background-color: #fff0f2;
+}
+
+.option.selected {
+    background-color: #4caf50;
+    color: white;
+    border-color: #388e3c;
+}
+
+.option.unselected {
+    background-color: #e57373;
+    color: white;
+    border-color: #c62828;
+}
+
+button {
+    width: 100%;
+    padding: 11px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b8324b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8f263b;
+}
+
+#resultPage {
+    text-align: center;
+}
+
+#resultPage p {
+    font-size: 18px;
+}
